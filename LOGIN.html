@@ -1,0 +1,152 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>LogIn MASCARA</title>
+    <style>
+        /* {color:black;font-family:calibr;font-size:10px} */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url("./login.jpg");
+            background-size: cover;
+            background-position:center;
+            background-attachment:fixed;
+            background-repeat:no-repeat;
+        }
+
+        #loginbox {
+            width: 400px;
+            height: 360px;
+            border: 3px solid #ffff;
+            background: #ccc;
+            color: black;
+            font-family: 'Borel', cursive;
+            top: 20%;
+            left: 20%;
+            border: 1px solid black;
+            position: absolute;
+            padding: 30px 10px;
+            border-radius: 2%;
+        }
+
+        h1 {
+            margin: 0px;
+            text-align: center;
+            padding: 0 0 20px;
+        }
+
+        .user {
+            margin-top: 20px;
+        }
+
+        .pass {
+            margin-top: 10px;
+        }
+
+        .user label {
+            font-size: 20px;
+        }
+
+        .pass label {
+            font-size: 20px;
+        }
+
+        input {
+            height: 28px;
+            font-size: 15px
+        }
+
+        .submit {
+            margin-left: 50px;
+            font-size: 19px;
+            font-weight: bold;
+            background-color: #fc2779;
+            color: #ffff;
+            height: 40px;
+            width: 80%;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .submit:hover {
+            color: whitesmoke
+        }
+
+        #a1 {
+            font-size: 18px;
+            color: #fc2779;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #a2 {
+            font-size: 18px;
+            color: #fc2779;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #a1:hover {
+            text-decoration: underline;
+        }
+
+        #a2:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loginbox">
+        <h1>LOGIN HERE</h1>
+
+        <div id="main">
+            <form>
+                <div class="user">
+                    <label for="username">USERNAME</label>&nbsp;
+                    <input type="email" name="username" placeholder="Enter Username" style="width:65%" required>
+                </div><br>
+                <br>
+                <div class="pass">
+                    <label for="password">PASSWORD</label>&nbsp;
+                    <input type="password" name="password" placeholder="Enter password" style="width:65%" required>
+                </div>
+                <br>
+                <br>
+                <div class="button">
+                    <button type="submit" class="submit" onclick="login()">Log In</button>
+                </div>
+                <br>
+
+                <a href="FORGOT.HTML" id="a1">Forgot Password?</a>
+                <br><br>
+                <p>New to MASCARA?
+                    <a href="SIGNUP.HTML" id="a2">Create account</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+    </div>
+    <script>
+        function login() {
+            alert("You are Logged in succesfully to MASCARA ")
+        }
+
+    </script>
+
+
+</body>
+
+</html>

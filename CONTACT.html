@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MASCARA</title>
+<style>
+
+/* body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contact-details, .business-hours {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-details h2, .business-hours h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-details p, .business-hours p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-details ul, .business-hours ul {
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-form {
+    margin: 20px;
+    padding: 20px;
+    background-image: url("https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: center;
+    background-repeat: inherit;
+    background-size:auto;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align:center;
+}
+
+.contact-form p {
+    font-size: 1rem;
+    color: #666;
+    text-align:center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 40%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section class="contact-info">
+        <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p>
+                Feel free to get in touch with us for any questions or concerns. We're here to help you!
+            </p>
+            <ul>
+                <li><strong>Phone:</strong> 18xx-26x-44xx</li>
+                <br>
+                <li><strong>Email:</strong> info@mascaracosmeticcompany.com</li>
+                <br>
+                <li><strong>Address:</strong> 123 Beauty Street, Cosmetictown, CA 12345</li>
+            </ul>
+        </div>
+
+        <div class="business-hours">
+            <h2>Business Hours</h2>
+            <p>We're open and ready to assist you during the following hours:</p>
+            <ul>
+                <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
+                <br>
+                <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+                <br>
+                <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <p>If you prefer, you can send us a message using the contact form below:</p>
+        <form action="submit_form.php" method="POST"> <!-- Replace with the actual form submission URL -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <br>
+
+            <button type="submit" onclick="cont()">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 MASCARA Cosmetic Company</p>
+    </footer>
+
+    <script>
+        function cont() {
+            alert("You complaint is registered succesfully")
+        }
+
+    </script>
+
+</body>
+</html>

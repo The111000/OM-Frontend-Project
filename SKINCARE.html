@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Skincare</title>
+    <style>
+        /* -------------------------------------------head section css--------------------------------------------- */
+        #head img {
+            width: 100%;
+        }
+
+        #title {
+            width: 100%;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+        }
+
+
+        /*------------------------------------------------Body Section CSS----------------------------------------------*/
+        #d1 {
+            /* float:left; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            background-color: rgba(245, 225, 228, 0.349);
+            padding: 5rem;
+            margin-bottom: 50px;
+        }
+
+        .cards1 {
+            /* width: 21%; */
+            background-color: white;
+            justify-content: center;
+            overflow: hidden;
+            border: 0.2rem solid #e8e8e8;
+            border-radius: 1.8rem;
+            box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+        }
+
+        .cards1 img {
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .cards1 img:hover {
+            transform: scale(1.05);
+
+        }
+        .cards1 p{
+            text-align:center;
+        }
+
+        .cards1:hover .buy {
+            transform: translateY(0px);
+            transition-duration: 0.8s;
+        }
+
+        .cards1:hover{
+            transform:matrix3d(1.0);
+            transform: translateX(10px);
+            transition-duration: 0.8s;
+        }
+
+
+        .buy {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 0.5rem 0rem;
+            transform: translateY(200px);
+            overflow: hidden;
+        }
+
+
+
+        .buy>button {
+            background-color: #c22323;
+            color: white;
+            font-weight: 800;
+            height: 50px;
+            border: none;
+            border-radius: 0.8rem;
+            cursor: pointer;
+            width: 180px;
+        }
+
+        .buy>button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .buy>i {
+            margin: 0.3rem 0.5rem;
+            font-size: 2.5rem;
+            color: #c22323;
+        }
+
+        /*------------------------------------------------Footer Section CSS----------------------------------------------*/
+        /*------------------------------------------------Footer Section CSS----------------------------------------------*/
+        #foot1 {
+            background-color: rgb(58, 64, 71);
+            width: 84.5%;
+            color: #ffff;
+            display: flex;
+            padding: 40px 0px 40px 200px;
+            ;
+        }
+
+        #f11 {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #f11inp {
+            border-bottom: 2px solid #ffff;
+            background-color: rgb(58, 64, 71);
+            color: #ffff;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            height: 30px;
+        }
+
+        #f11submit {
+            border: 2px solid #ffff;
+            text-align: center;
+            background-color: rgb(58, 64, 71);
+            color: #ffff;
+            font-size: 14px;
+            font-family: 'Borel', cursive;
+            height: 40px;
+            width: 60px;
+
+        }
+
+        #f12 {
+            margin-left: 100px;
+
+        }
+
+        #foot2 {
+            background-color: rgb(140, 141, 148);
+            width: 100%;
+            display: inline-flex;
+            padding: 50px 0px 50px 0px;
+        }
+
+        #foot2 .ulist {
+            list-style: none;
+            margin-left: 100px;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            text-align: left;
+        }
+
+        #foot2 .ulist li {
+            margin-top: 7px;
+        }
+
+        #foot2 .ulist li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #foot2 .ulist li a:hover {
+            color: lightgray;
+        }
+
+        #foot2 .com {
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            word-spacing: 2px;
+            font-size: 22px;
+        }
+
+        #foot3 {
+            background-color: rgb(243, 244, 245);
+            color: rgb(58, 64, 71);
+            margin-top: 0px;
+            padding: 20px 0px 20px 0px;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Borel', cursive;
+        }
+
+        #foot3 .icons {
+            padding: 20px 30px 0 0;
+        }
+
+        #foot4 {
+            background-color: #f9f9f9;
+            width: 100%;
+            height: 100px;
+        }
+
+        #foot4_content {
+            background-color: rgba(232, 0, 112, 0.904);
+            color: rgb(255, 255, 255);
+            border-top: 1px solid rgb(255, 255, 255);
+            padding: 16px;
+            padding-left: 340px;
+            display: flex;
+        }
+
+        #foot4 .contf4 {
+            margin-left: 20px;
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <img src="https://images-static.nykaa.com/uploads/e71a4a8b-164e-496c-88ba-7462a6723f8c.jpg?tr=w-1200,cm-pad_resize"
+                alt="Image not vailable!!!!!!">
+        </div>
+        <div id="title">
+            <h1>Best Skincare Products</h1>
+        </div>
+
+    </header>
+
+
+    <!-------------------------------------------------------------MAIN section----------------------------------------------->
+    <main id="main">
+
+        <div id="d1">
+            <div class="cards1">
+                <img src="https://www.brillare.co.in/cdn/shop/files/Brillare-Hylauronic-Acid-Face-Serum-1_600x600.jpg?v=1690542610"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹150</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR30W1j4CiYtQi_w7qhoTHph4ochmripNC2ZOOveQ9MTOUNLaSTL1BMV09x7HzDdgwCgfEVv64O1P1vehz6EDyAXUPSSHibf3mdKpMLWNQSUGL3CGvB5z5v8g&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹250</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://www.clinique.in/media/export/cms/products/1200x1500/cl_sku_KPR701_1200x1500_0.png"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹550</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Body-Lotion-SENORITA-Women.jpg?v=1694007456&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹950</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/Sunscreen-01.jpg?v=1655472151&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/products/682.jpg?v=1668763806&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹650</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/files/CEO-pouch-listing-10.jpg?v=1695205020&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹450</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/products/654.jpg?v=1668147215&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹950</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/files/Skai-Travel-pouch-10_2.jpg?v=1695300843&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/products/NoseGlow-01.jpg?v=1652169791&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹150</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/products/583.jpg?v=1668168782&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹350</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/files/CeoManGiftBox.jpg?v=1695206294&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/products/Ubtan-Plus-Face-Pack-01.jpg?v=1651698433&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹550</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://bellavitaorganic.com/cdn/shop/products/652.jpg?v=1668154097&width=360"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹350</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://82e.com/cdn/shop/files/bakuchiol-slip-face-oil-product-card1_1.jpg?v=1689159402"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹250</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS5xOkKRqCYvYxLTxP9pr5-snYwwomw4b0FkQVn5frbgHsUbG5ABxaO1ezO11eCniXEZzs5jAHR8gtZwrLtsUdAPnaIsSwlPta3g8LFGlzX6slcHcOsnzju5nv-&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹450</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSNMluWzGO4w2U4DEj7bFEV9DYSHWlmPTxckxFbWktlRaTfCBI60A8b8E9TcU7cb1zzUIRKzbgVl45oQVMDZGp0THWIAvVP0vN3NH1hez3kgR-TCMKHCzo-PA&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRu8tSaJu9TlcyYStg74XaX5P1OqBySDsUAvvqiX6TjmXtHn2Emm39MOcJDD2w78WquAmLOpDAo9G2EUZY653r8XSQqAOi31eNgiKFwx1PsCi8zLpQ3MgXICw&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹150</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcROIEnBZxDxxMc-ZGsO8zxQIDAK41kgjKWX10cfnpphKg5qu5DPDUbCMtNesLK_HBFtOi0eB8cGkpxyvQV8cLzija4plRNrISjlOQu9WOgWn10iqbsCX0MkJjA&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹850</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRcI5pxAXFwmD5G6ASrnjZoiFLKDv25DQed8dBgzVEoxPvETc5L1bSa4uJ1ah7fJwd-DgP50htgay8fMxLlPeE3UcvO0cplB4ZS1MJ9dwlb8-SNHwUjaKX9Eg&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹950</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ1RwVg_iR8N28CMD5nSMrGa01jqwSlKXFkITVY2vdBynkAthmNZ0CSO5KdwRRm0MdOoGYK1LdgtuBWj19xSaoQmrR5g4l3qRAu0tVs4KKqYVzMcch11-k7YNI&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQwVo13GycTqukFB0rmxNXdCgTrCCxA632ZUmEXR7QeSgdpNg36FW3XdgXwAmga0UoIfGh4jnyqQgIiRqQEyA4SrjJ_9_TlFdxUjyBmm65JGXiT33Uavw_n&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹250</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRj8B8L-dnt1kFfEJJxve6zZQu0QX8cNPD_QVV0A1GrDbQUrA2Jbm_1nJq9F-Wyw3xYDHepZVRb55im9EpEGQc2lrn5yLphywtrOoYwP5a4aP_tWPdCmX_E&usqp=CAE "
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹350</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQZxzX4m6J1egS8Y9n3VjGDFaemPVh57SJAdu2Dl1hPkCnaJ-NSnL8we8Rt37Vu3lmjp6ELr4JE7l8UaA7YY-rwFBv-ny-C3pYhPLIlZa4h0IIYrhtx_3yD&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹450</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQFkL7_SBRwTujUJtR0ryJqVSFhQ1SAUUU00x2uYvki8ebT80hP5YH0HIlaPQkonOy5dfMJasrul6ALWYiYXj-tIeEo68XWtqC2HvRt5UM&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹650</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSFJyeQAq-JX2Py8zYOkl36G3isnvmlrgrdwDmS6dXh9VxJB2W0K1NukSLjIVqCZBF27ZXDoKqy_el0AeppRhVBnJYbZ8rZsP4rQYVl9q33N3ccMKiLKt3d&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSMV46TOLhJFxTRGyOnLyfZr_2aN3GNyaNBxF_3u6oyZRIBNF6NfFodrHTMp0XRZ36BzosQwCZePNNCSDSJiI1Ew72RpjUxqLKqFlo_lKBIJVb8QNlIrQ4j4g&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹450</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRACoIrR5fuv9gPtixH0pr_n-tzU0UKcbhxSXRV4-0EVfhMBWY4hSNwWiSBbO6PcSVwDPH_1WKA91kaeds33ujIj3wLgDjOIG7uBJLKWEC9yV4QnSrCOFLMww&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹650</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQW7valfgcH6RGU73Ug64zNChtnbGVsO-xFQSg0o7dncmJ_WygVBUxVpn4_4HE15Ai-VpkJiTBHoXj489Z_Jp3mMQ8UumxdwHDXShnOeQJLzfouR8yliq9EUEk&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹550</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQit6Bs6pm-yfBpS4iAbGm1pAGyK6SKO0gUqd8evYtI04dn3MulnI-Q6UPQTJfHvIs458uQtfU2zRmTkGDx2XnMd2yOLxayp5BzVrkNJEVg6uz5Nsqz2FvHvIM&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹550</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTKwihMhioQaQb9fRnP_oJ81NrIUtJ7iLbquIFig2wjsEnE4HhmQE-W-C2EsHrFa0-c8wTj1EY2fK8KCF5O144BWDbxEfzwTa9FR3ynBbV1UClkvjp_yAYbgnc&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQS-g6KggquT5ecWM3HJevA-77PGg243srinp2c4z38YeqXFejyIy7-I2Yyb0kXsQOC23ezBCKbUNk5vwfoLL3EDyxeKxi3UEzQNZBGb1wGnlFgy02ZR0oB&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹950</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSSHFPNCIO6e6ar3k3iuecUXQv5ld9paG6OGk_pXnBViz5ObFKmL59B1aLyGZLxS_266e4GzMJoZlu8lljr7pJX4tYeAcd8r9vi307kZ5Dk3KpHKysdk9gx5Q&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹850</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSUFBnQUO5Vv4IJUt8NsqNYpU2CmXYcMGKd4VnChiz8349aAa7tGAh26fDvMeMbFe349Tu1THC0J_Dht2w29us6MNXaOTQVgk771zqRNsmIcpAsaoPpC0nmY9k&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹450</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTcHJCPf6XhHHF_rCXL4LMj4fjoBcQdaTH2L75j55WWjp2bkqW48GYZLEqEq3YuwWkRlsS1VR9DVWJSAAUQRFdSLWuDEEQXOFBnuADaQhCfFsDpO5RE69YDQ&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹750</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+            <div class="cards1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSt9W7LYmxDql-6YlCKxhRWjRYHZ-_-3GhP2pvtcUrbiHdVkGHzB6KRovRE0Z-U8KxqkqbdfyBEgAkFN_xE5yYUB7StVPI9KxxRs9a2X0A&usqp=CAE"
+                    alt="Image not available!!!!!">
+                <p>MRP: ₹150</p>
+                <div class="buy">
+                    <button><a href="PAYMENT.html">ADD TO BAG</a></button>
+                    <i class="ri-heart-line"></i>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-----------------------------------------------------------FOOTER section----------------------------------------------->
+    <Footer id="foot">
+        <div id="foot1">
+            <div id="f11">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16">
+                    <title>Envelope icon</title>
+                    <path fill="#FFF" fill-rule="nonzero"
+                        d="M0 0v1.294C2.952 3.87 9.034 9.18 9.532 9.618c.62.545 1.233.604 1.468.604.235 0 .848-.058 1.468-.603.48-.422 6.357-5.604 9.532-8.405V0H0zm22 2.222c-3.261 2.912-8.504 7.593-8.956 7.995-.843.75-1.71.832-2.044.832-.334 0-1.201-.081-2.044-.833C8.488 9.8 3.099 5.037 0 2.298V16h22V2.222z">
+                    </path>
+                </svg>
+                <p>Get special discount on your inbox</p>
+
+                <br>
+                <input id="f11inp" type="email" placeholder="Your Email">
+                <input id="f11submit" type="submit" value="SEND">
+            </div>
+            <div id="f12">
+                <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30">
+                    <path fill="#FFF"
+                        d="M24.02 30h-.03c-5.01-.164-10.88-5.02-14.925-9.068C5.015 16.885.16 11.013.003 6.026c-.058-1.75 4.237-4.862 4.28-4.893 1.115-.776 2.352-.5 2.86.203.344.476 3.6 5.409 3.953 5.969.368.58.313 1.445-.145 2.312-.253.482-1.092 1.956-1.485 2.643.425.605 1.547 2.086 3.865 4.404 2.32 2.318 3.8 3.443 4.406 3.867.687-.393 2.161-1.232 2.643-1.484.854-.453 1.714-.51 2.3-.151.599.367 5.518 3.638 5.971 3.953.38.268.625.727.675 1.26.046.54-.12 1.11-.467 1.607-.028.042-3.104 4.284-4.838 4.284z">
+                    </path>
+                </svg>
+                <p>FOR ANY HELP, YOU MAY CALL US AT 18xx-26x-44xx</p>
+
+                <br>
+                <p>(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</p>
+            </div>
+        </div>
+
+        <div id="foot2">
+            <ul class="ulist" id="company">
+                <h3 class="com">MASCARA</h3>
+                <li> <a href="About.html" target="_blank">Who We Are</a> </li>
+                <li><a href="" target="_blank">Careers</a></li>
+                <li><a href="" target="_blank">Investor Relations</a></li>
+            </ul>
+            <ul class="ulist" id="help">
+                <h3 class="com">Help</h3>
+                <li><a href="" target="_blank">Report Fraud</a></li>
+                <li><a href="CONTACT.html" target="_blank">Contact Us</a></li>
+                <li><a href="" target="_blank">Frequently asked questions</a></li>
+            </ul>
+            <ul class="ulist" id="inspire">
+                <h3 class="com">Inspire Me</h3>
+                <li><a href="" target="_blank">Beauty Book</a></li>
+                <li><a href="DEMO.html" target="_blank">Beauty Tips</a></li>
+            </ul>
+
+            <ul class="ulist" id="quick">
+                <h3 class="com">Quick Links</h3>
+                <li><a href="" target="_blank">Offer Zone</a></li>
+                <li><a href="" target="_blank">New Launch</a></li>
+                <li><a href="" target="_blank">Security</a></li>
+            </ul>
+            <ul class="ulist" id="topc">
+                <h3 class="com">Top Categories</h3>
+                <li><a href="SKINCARE.html" target="_blank">Skin Care</a></li>
+                <li><a href="HAIR.html" target="_blank">Hair</a></li>
+                <li><a href="MAKEUP.html" target="_blank">Make Up</a></li>
+                <li><a href="BATH.html" target="_blank">Bath & Body</a></li>
+                <li><a href="FRAGRANCE.html" target="_blank">Fragrance</a></li>
+                <li><a href="MEN.html" target="_blank">Men</a></li>
+            </ul>
+        </div>
+
+        <div id="foot3">
+            <p>Show us some love ❤ on social media</p>
+
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+            </svg>
+
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+            </svg>
+
+            <svg class="icons" xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
+            </svg>
+
+        </div>
+        <div id="foot4">
+            <div id="foot4_content">
+                <p class="contf4">Terms & Conditions</p>
+                <p class="contf4">Shopping Policy</p>
+                <p class="contf4">Cancellation Policy</p>
+                <p class="contf4">Privacy Policy</p>
+                <br>
+            </div>
+            <hr>
+        </div>
+    </Footer>
+
+    <script>
+        function like() {
+            this.classList.toggle("ri-heart-fill");
+            this.classList.toggle("ri-heart-line");
+        }
+
+        let nonlikeButton = document.querySelectorAll('.ri-heart-line');
+        let likeButton = document.querySelectorAll('.ri-heart-line');
+        nonlikeButton.forEach(e => e.addEventListener('click', like));
+        likeButton.forEach(e => e.addEventListener('click', like));
+    </script>
+
+
+</body>
+
+</html>

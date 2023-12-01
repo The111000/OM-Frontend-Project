@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SignUp MASCARA</title>
+<style>
+*{margin:0px;
+padding:0px;}
+
+body{
+margin:0px;
+padding:0px;
+background-image:url("./signup.jpg");
+background-size: cover;
+background-position:center;
+background-attachment:fixed;
+background-repeat:no-repeat;
+}
+
+#signbox{
+width:400px;
+height:85%;
+border:3px solid #ffff;
+background:rgba(255, 99, 71,0.4);
+color:black;
+font-family: 'Borel', cursive;
+top:5%;
+left:35%;
+border: 1px solid black;
+position:absolute;
+border-radius:2%;
+}
+h1{
+text-align:center;
+padding-bottom: 0px;
+}
+
+#line{
+border-bottom: 1px solid black;
+text-align:center;
+padding-bottom:10px;
+
+}
+.first{
+margin-top:10px;
+}
+
+#data input{
+height:27px;
+font-size:20px;
+margin-left:60px;
+font-family: 'Montserrat', sans-serif;
+text-align: justify;
+color:black;
+}
+
+#submit{
+height: 30px;
+width:180px;
+font-size: 15px;
+margin-top: 20px;
+background-color:rgb(26, 24, 24);
+color:#ffff;
+}
+
+#submit:hover{
+background-color:#ffffff;
+color:black;
+}
+
+#google{
+background-color:rgb(245, 184, 184);
+width:220px;
+height:35px;
+margin-left:24%;
+text-align: center;
+border-radius:8px;
+padding-top:2px;
+}
+#google a{
+text-decoration:none;
+color:black;
+font-size:23px;
+font-family: 'Montserrat', sans-serif;
+}
+#google img{
+height:20px;
+}
+
+</style>
+</head>
+<body>
+<header>
+</header>
+<main>
+<div id="signbox">
+<h1>Create a New Account</h1>
+<br>
+<p id="line">It's quick and easy.</p>
+<form action="LOGIN.html">
+
+    <div id="data">
+    <input name="firstname" type="text" class="first" placeholder="First_name" style="width:70%" required>
+    <br><br>
+    <input name="lastname" type="text" class="last" placeholder="Last_name" style="width:70%" required>
+    <br><br>
+    <input name="email" type="email" class="email" placeholder="Email*" style="width:70%" required>
+    <br><br>
+    <input type="number" maxlength="10" placeholder="Mobile no." class="phone" style="width:70%" required>
+    <br><br>
+    <input name="pass" type="password" class="pass" placeholder="Password" style="width:70%" required>
+    <br><br>
+    <input name="cpass" type="password" class="cpass" placeholder="Confirm password" style="width:70%" required>
+    <br><center>
+    <button type="submit" id="submit" value="Create Account" onclick="sign()">Create account</button></center>
+    <p id="or">____________________<b>or</b>____________________</p><br>
+    <div id="google">
+    <a href="#">Continue with&nbsp;<img src="Gmail_Logo.svg"></a>
+    </div>
+
+    </div>
+</form>
+</div>
+
+</main>
+<script>
+    function sign() {
+        alert("Welcome To MASCARA Family...")
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{margin:0px;
+padding:0px
+}
+#mobile{height:400px;
+width:400px;
+background-color:rgba(0, 0, 0, 0.479);
+position:absolute;
+top:46%;
+left:29%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+color:white;
+padding:50px 20px;
+border:5px solid white;
+border-radius:2%;
+box-shadow:4px 4px 15px 15px black;
+}
+
+h1{text-align:center;
+font-family:Copperplate Gothic Bold
+}
+#mobile input{
+height:23px;
+}
+.phone{margin-left:30px;
+height:27px;
+margin-top:2px
+}
+
+.submit{text-align:center;
+height:30px;
+width:100px;
+font-weight: 550;
+margin-left:35%;
+margin-top:10%;
+background-color:orange
+}
+.submit:hover{background-color:rgb(226, 107, 107)
+}
+p{font-size:23px
+}
+#google{height:40px;
+width:96%;
+background-color:white;
+text-align:center;
+padding-top:7px;
+padding-left:15px;
+}
+
+#email{height:40px;
+width:96%;
+background-color:white;
+color:grey;
+text-align:center;
+padding-top:7px;
+padding-left:15px;
+}
+#email a{text-decoration:none;
+font-size:23px;
+color:grey
+}
+#google a{text-decoration:none;
+font-size:23px;
+color:grey;
+}
+input{height:20px;
+font-size:18px
+}
+.bg-vid{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.bg-vid .vid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+<div class="bg-vid"><video class="vid" style="width:100%;"  autoplay loop src="https://player.vimeo.com/external/514615281.sd.mp4?s=48a184c1a9a9487d07e32e9d22a5bc272644d0f6&profile_id=164&oauth2_token_id=57447761"></video></div>
+<div id="mobile">
+    <h1>MOBILE NO.</h1>
+    <br>
+    <select class="phone">
+        <option>+91
+    </select>
+    <input type="text" placeholder="Enter Number" maxlength="10" style="width:65%" required>
+    <br>
+    <a href="RESET.HTML">
+    <button type="submit" class="submit">CONTINUE</button></a>
+    <br><br>
+    <p>______________<b>or</b>_______________</p>
+    <br>
+    <button type="submit" id="email">
+    <a href="#">Continue with Email</a>
+    </button>
+    <br><br>
+    <button type="submit" id="google">
+    <a href="#">Continue with Google</a>
+    </button>
+</div>
+</body>
+</html>
